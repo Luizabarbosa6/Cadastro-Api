@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/Frontend/cadastro/login.html"
+  status = 200
