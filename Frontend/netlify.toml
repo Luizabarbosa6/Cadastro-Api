@@ -2,3 +2,4 @@
   from = "/"
   to = "/Frontend/cadastro/login.html"
   status = 200
+  force = true
