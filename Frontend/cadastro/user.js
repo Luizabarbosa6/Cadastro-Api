@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiUrl = 'http://localhost:3000/api/users'; // Atualize para sua API
+    const apiUrl = 'https://cadastro-api-pyio.onrender.com/api/users'; // Atualize para sua API
 
     const form = document.querySelector('.form');
 
