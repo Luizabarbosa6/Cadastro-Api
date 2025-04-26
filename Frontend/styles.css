@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    position: relative;
+}
+
+.container .list .item {
+    display: none; 
+}
+
+.container .list .item.active {
+    display: block; 
+}
+
+
+body {
+    background-color: #000000; 
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+header img {
+    width: 143px; 
+    height: 80px;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 15px; 
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.indicators {
+    position: absolute;
+    margin: -1%;
+    top: 7%;
+    left: 55%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+
+.indicators .number {
+    font-size: 3em;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+}
+
+.indicators ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.indicators ul li {
+    width: 50px;
+    height: 5px;
+    background-color: gold;
+    border-radius: 5px;
+}
+
+.indicators ul .active {
+    background-color: aliceblue;
+}
+
+
+.img2 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin: 44px auto;
+    display: block;
+}
+
+
+.content h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+
+
+
+
+.linha-central {
+    width: 80%; 
+    height: 1px;
+    background-color: white;
+    margin: 0 auto; 
+}
+
+
+.arrows {
+    width: 90vw;
+    position: absolute;
+    top: 62.5%;
+    left: 53%;
+    transform: translate(-50%, -25px);
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+    & button:nth-child(1) {
+        & img {
+            transform: scale(-1)
+        }
+    }
+
+    & button {
+        top: 60%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        & img {
+            width: 30px;
+            margin-top: 4px;
+        }
+
+        &:hover {
+            background-color: gold;
+        }
+    }
+}
+
+
+.quadrado-curvado {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 23px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 338px;
+}
+
+
+.descripition {
+    font-size: 12px; 
+    color: white;
+    line-height: 1.5;
+}
+
+/* Botão de informação */
+.information {
+    width: 121px;
+    height: 27px;
+    background-color: #F3C200;
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+    .img2 img {
+        max-width: 400px;
+    }
+
+    .quadrado-curvado {
+        max-width: 500px;
+    }
+
+    .information {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 600px){
+.arrows{
+    top: 61%;
+}
+
+}
+
+@media (max-width: 500px) {
+
+    .arrows{
+        top: 59%;
+    }
+    .content h2 {
+        font-size: 2em;
+        margin-top: 70px;
+    }
+
+    .img2 img {
+        max-width: 350px;
+    }
+
+    .quadrado-curvado {
+        max-width: 300px;
+    }
+
+    .information {
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+  
+
+    .arrows{
+        top: 54%;
+    
+
+    }
+    .content h2 {
+        font-size: 1.8em;
+        margin-top: 80px;
+    }
+
+    .img2 img {
+        max-width: 300px;
+    }
+
+    .quadrado-curvado {
+        max-width: 250px;
+    }
+
+    .information {
+        width: 80px;
+        font-size: 12px;
+    }
+}
